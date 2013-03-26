@@ -84,8 +84,6 @@ int main(int argc, char const *argv[])
 
 	{
 
-	
-
 	sock = socket(AF_INET , SOCK_STREAM , 0);
 
 	flags = fcntl(sock, F_GETFL, 0);
@@ -104,7 +102,7 @@ int main(int argc, char const *argv[])
 
 	connect(sock, (struct sockaddr*)&sin, sizeof(struct sockaddr));
 
-            printf("Connexion à %s sur le port %d\n", inet_ntoa		(sin.sin_addr), htons(sin.sin_port));
+            printf("Connexion à %s sur le port %d\n", inet_ntoa(sin.sin_addr), htons(sin.sin_port));
 
 
 
