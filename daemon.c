@@ -1,6 +1,11 @@
+/*
+Exemple for using deamon by djekmani
+*/
+
 #include <stdlib.h>
 #include <unistd.h>
 #include <syslog.h>
+
 
 int main(int argc, char *argv[]) {
 pid_t pid, sid;
